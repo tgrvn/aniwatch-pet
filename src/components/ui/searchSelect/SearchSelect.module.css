@@ -1,0 +1,76 @@
+.down::before {
+  content: "\f078";
+}
+
+.options {
+  position: absolute;
+  top: calc(100% + 10px);
+  display: flex;
+  flex-direction: column;
+  gap: 4px 0;
+  border-radius: 6px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 14px 30px rgba(103, 132, 187, 0.1),
+    0px 4px 4px rgba(103, 132, 187, 0.04);
+
+  padding: 10px 10px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #748899;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f2f5f7;
+  color: #43b6f2;
+}
+
+.selected::after {
+  content: "\f058";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  color: #6fc8ff;
+  font-family: "icomoon";
+}
+
+.multiply {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 14px;
+  gap: 0 4px;
+  cursor: pointer;
+}
+
+.multiplyName,
+.multiplyCount {
+  background-color: #e3eaf0;
+  color: #647380;
+  padding: 4px 6px;
+  border-radius: 4px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.clear::before {
+  content: "\f00d";
+}

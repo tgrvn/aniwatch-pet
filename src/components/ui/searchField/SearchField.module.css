@@ -1,0 +1,26 @@
+.search__wrap::before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16px;
+  height: 16px;
+  font-family: "icomoon";
+  font-size: 16px;
+  color: #c9d7e3;
+}
+
+.search__wrap::before {
+  content: "\f002";
+  left: 13px;
+}
+
+.clear::before {
+  content: "\f00d";
+}
+
+.loop {
+  padding-left: 36px;
+}
