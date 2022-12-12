@@ -1,0 +1,19 @@
+:root {
+  --app-bc: #edf1f5;
+
+  --text-primary: #647380;
+  --heading-primary: #516170;
+
+  --input-box-s: 0px 14px 30px rgba(103, 132, 187, 0.1),
+    0px 4px 4px rgba(103, 132, 187, 0.04);
+  --input-bc: #fbfbfb;
+  --input-txt: #748899;
+  --input-placeholder: #adc0d2;
+  --input-icon: #c9d7e3;
+  --input-icon-hover: #adc0d2;
+  --input-icon-active: #6fc8ff;
+  --option-hover-bc: #f2f5f7;
+  --option-hover-text: #43b6f2;
+  --counter-bc: #e3eaf0;
+  --counter-text: #647380;
+}

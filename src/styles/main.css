@@ -1,4 +1,5 @@
 @import url("./icomoon/style.css");
+@import url("./_variables.css");
 @import url("./transitions.css");
 @import url("./search-items.css");
 @import url("./index.css");

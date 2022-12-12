@@ -24,6 +24,10 @@ export default function SearchSelect({
   const inputRef = useRef();
   const multiplyRef = useRef();
 
+  useEffect(() => {
+    setOptionsState([...options]);
+  }, []);
+
   function handleSelect(e) {
     e.stopPropagation();
 
@@ -45,10 +49,6 @@ export default function SearchSelect({
       setMultiplyVisible(true);
     }
   }
-
-  useEffect(() => {
-    setOptionsState([...options]);
-  }, []);
 
   const filtered = useSearch(optionsState, searchQuerry);
 
@@ -111,7 +111,7 @@ export default function SearchSelect({
           />
         )}
 
-        {multiplyVisible && value.length ? (
+        {multiplyVisible && value.length && multiply ? (
           <div
             onClick={() => removeValue(value[0])}
             ref={multiplyRef}

@@ -1,0 +1,28 @@
+.section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.head {
+  text-transform: uppercase;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 10px;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .cards {
+    grid-template-columns: repeat(auto-fill, 165px);
+  }
+}

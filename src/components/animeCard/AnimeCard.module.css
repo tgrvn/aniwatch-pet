@@ -1,0 +1,40 @@
+.coverLoading {
+  height: 265px;
+  width: 100%;
+  background-color: #dde6ee;
+  overflow: hidden;
+}
+
+.titleLoading {
+  margin-top: 12px;
+  height: 17px;
+  width: 80%;
+  background-color: #dde6ee;
+  overflow: hidden;
+}
+
+.loader::before {
+  content: "";
+  display: block;
+  width: 200%;
+  background: linear-gradient(
+    90deg,
+    rgba(221, 230, 238, 0) 0,
+    rgba(8, 143, 214, 0.06) 40%,
+    rgba(8, 143, 214, 0.06) 60%,
+    rgba(221, 230, 238, 0)
+  );
+  height: 100%;
+  transform: translateX(0);
+  animation: loading 2s linear infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(100%);
+  }
+}
