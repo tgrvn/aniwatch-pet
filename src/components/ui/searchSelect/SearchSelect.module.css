@@ -9,13 +9,11 @@
   display: flex;
   flex-direction: column;
   gap: 4px 0;
+  padding: 10px 10px;
   border-radius: 6px;
   width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 14px 30px rgba(103, 132, 187, 0.1),
-    0px 4px 4px rgba(103, 132, 187, 0.04);
-
-  padding: 10px 10px;
+  box-shadow: var(--input-box-s);
+  background-color: var(--input-bc);
 }
 
 .option {
@@ -26,14 +24,14 @@
   border-radius: 6px;
   font-size: 14px;
   line-height: 16px;
-  color: #748899;
-  transition: all 0.2s linear;
+  color: var(--input-txt);
   cursor: pointer;
+  transition: all 0.2s linear;
 }
 
 .option:hover {
-  background-color: #f2f5f7;
-  color: #43b6f2;
+  background-color: var(--option-hover-bc);
+  color: var(--option-hover-text);
 }
 
 .selected::after {
@@ -43,29 +41,29 @@
   align-items: center;
   width: 16px;
   height: 16px;
-  color: #6fc8ff;
   font-family: "icomoon";
+  color: var(--input-icon-active);
 }
 
 .multiply {
+  position: absolute;
+  top: 50%;
+  left: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  font-size: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 14px;
   gap: 0 4px;
+  transform: translateY(-50%);
+  font-size: 12px;
   cursor: pointer;
 }
 
 .multiplyName,
 .multiplyCount {
-  background-color: #e3eaf0;
-  color: #647380;
   padding: 4px 6px;
   border-radius: 4px;
+  background-color: var(--counter-bc);
+  color: var(--counter-text);
 }
 
 .pointer {

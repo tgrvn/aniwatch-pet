@@ -9,7 +9,7 @@
   height: 16px;
   font-family: "icomoon";
   font-size: 16px;
-  color: #c9d7e3;
+  color: var(--input-icon);
 }
 
 .search__wrap::before {
