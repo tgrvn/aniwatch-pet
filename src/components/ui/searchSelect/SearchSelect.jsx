@@ -55,6 +55,7 @@ export default function SearchSelect({
   useOnClickOutside(inputRef, () => {
     setSelected(value);
     setSearchQuerry("");
+    setMultiplyVisible(true);
     setOptionVisible(false);
   });
 
@@ -93,7 +94,7 @@ export default function SearchSelect({
           <input
             className={"search__item"}
             onChange={(e) => setSearchQuerry(e.target.value)}
-            onFocus={(e) => {
+            onFocus={() => {
               setMultiplyVisible(false);
             }}
             value={searchQuerry}

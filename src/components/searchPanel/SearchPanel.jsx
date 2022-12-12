@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import SearchField from "../ui/searchField/SearchField";
 import SearchSelect from "../ui/searchSelect/SearchSelect";
 import styles from "./SearchPanel.module.css";
-import SearchPanelAdaptive from "./SearchPanelAdaptive";
 
 export default function SearchPanel() {
+  const [filtersHidden, setFiltersHidden] = useState(true);
   const optionsForGenre = ["Action", "Comedy", "OVA", "Drama"];
   const optionsForYear = ["2022", "2021", "2020", "2019", "2018"];
   const optionsForSeasons = ["Winter", "Summer", "Spring", "Fall"];
@@ -19,13 +19,20 @@ export default function SearchPanel() {
   });
 
   return (
-    <div>
-      <div className={styles.panel}>
+    <div className={styles.panel}>
+      <div className={styles.search}>
         <SearchField
           head={"Search"}
           value={filters.searchQuerry}
           setValue={(value) => setFilters({ ...filters, searchQuerry: value })}
         />
+        <div
+          onClick={() => setFiltersHidden(!filtersHidden)}
+          className={`${styles.switcher} ${!filtersHidden && styles.active}`}
+        ></div>
+      </div>
+
+      <div className={`${styles.filters} ${filtersHidden && styles.hidden}`}>
         <SearchSelect
           head={"Genres"}
           options={optionsForGenre}
@@ -65,8 +72,6 @@ export default function SearchPanel() {
           disabled={true}
         />
       </div>
-
-      <SearchPanelAdaptive />
     </div>
   );
 }

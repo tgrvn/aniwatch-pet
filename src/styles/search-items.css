@@ -24,6 +24,7 @@
   font-size: 13px;
   font-weight: 600;
   color: #748899;
+  min-width: 140px;
 }
 
 .search__item__icon-right {
