@@ -3,20 +3,12 @@ import SearchField from "../ui/searchField/SearchField";
 import SearchSelect from "../ui/searchSelect/SearchSelect";
 import styles from "./SearchPanel.module.css";
 
-export default function SearchPanel() {
+export default function SearchPanel({ filters, setFilters }) {
   const [filtersHidden, setFiltersHidden] = useState(true);
   const optionsForGenre = ["Action", "Comedy", "OVA", "Drama"];
   const optionsForYear = ["2022", "2021", "2020", "2019", "2018"];
   const optionsForSeasons = ["Winter", "Summer", "Spring", "Fall"];
   const optionsForFormat = ["TV", "OVA", "Serial", "Film"];
-
-  const [filters, setFilters] = useState({
-    searchQuerry: "",
-    genres: [],
-    year: "",
-    seasons: "",
-    format: "",
-  });
 
   return (
     <div className={styles.panel}>

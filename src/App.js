@@ -1,5 +1,4 @@
 import React from "react";
-import PreviewSection from "./components/previewSection/PreviewSection";
 import SearchAnime from "./pages/searchAnime/SearchAnime";
 
 function App() {
@@ -7,7 +6,6 @@ function App() {
     <div className="App">
       <div className="wrapper">
         <SearchAnime />
-        <PreviewSection />
       </div>
     </div>
   );

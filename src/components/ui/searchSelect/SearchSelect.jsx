@@ -26,12 +26,20 @@ export default function SearchSelect({
 
   useEffect(() => {
     setOptionsState([...options]);
-  }, []);
+  }, [options]);
 
   function handleSelect(e) {
     e.stopPropagation();
 
     if (!multiply) {
+      if (e.target.innerText === selected || e.target.innerText === value) {
+        setSearchQuerry("");
+        setSelected("");
+        setValue("");
+        setOptionVisible(false);
+        return;
+      }
+
       setValue(e.target.innerText);
       setSelected(e.target.innerText);
       setSearchQuerry("");
@@ -63,8 +71,8 @@ export default function SearchSelect({
     e.stopPropagation();
 
     if (typeof value === "string") {
-      setValue("");
       setSelected("");
+      setValue("");
       setOptionVisible(false);
     }
 
@@ -81,15 +89,6 @@ export default function SearchSelect({
         onClick={() => setOptionVisible(true)}
         className={`search__wrap`}
       >
-        {value.length > 0 ? (
-          <div
-            onClick={handleClear}
-            className={`search__item__icon-right ${styles.clear}`}
-          ></div>
-        ) : (
-          <div className={`search__item__icon-right ${styles.down}`}></div>
-        )}
-
         {search && multiply ? (
           <input
             className={"search__item"}
@@ -109,6 +108,21 @@ export default function SearchSelect({
             value={selected ? selected : searchQuerry}
             disabled={disabled}
           />
+        )}
+
+        {value.length > 0 ? (
+          <div
+            onClick={handleClear}
+            className={`search__item__icon-right ${styles.clear}`}
+          ></div>
+        ) : (
+          <div
+            onClick={(e) => {
+              e.stopPropagation();
+              setOptionVisible(!optionVisible);
+            }}
+            className={`search__item__icon-right ${styles.down}`}
+          ></div>
         )}
 
         {multiplyVisible && value.length && multiply ? (
