@@ -1,6 +1,6 @@
 import React from "react";
+import { AnimeCard } from "components";
 import styles from "./PreviewSection.module.css";
-import AnimeCard from "../animeCard/AnimeCard";
 
 export default function PreviewSection() {
   const cards = [1, 2, 3, 4, 5, 6];

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import SearchField from "../ui/searchField/SearchField";
-import SearchSelect from "../ui/searchSelect/SearchSelect";
+import { SearchField, SearchSelect } from "components/ui";
 import styles from "./SearchPanel.module.css";
 
 export default function SearchPanel({ filters, setFilters }) {

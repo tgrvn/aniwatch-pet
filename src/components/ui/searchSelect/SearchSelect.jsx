@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./SearchSelect.module.css";
 import { CSSTransition } from "react-transition-group";
-import { useOnClickOutside } from "../../../hooks/useClickOutside";
-import { useSearch } from "../../../hooks/useSearch";
+import { useClickOutside, useSearch } from "hooks";
+import styles from "./SearchSelect.module.css";
 
 export default function SearchSelect({
   head,
@@ -60,7 +59,7 @@ export default function SearchSelect({
 
   const filtered = useSearch(optionsState, searchQuerry);
 
-  useOnClickOutside(inputRef, () => {
+  useClickOutside(inputRef, () => {
     setSelected(value);
     setSearchQuerry("");
     setMultiplyVisible(true);

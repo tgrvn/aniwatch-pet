@@ -1,5 +1,5 @@
 import React from "react";
-import SearchAnime from "./pages/searchAnime/SearchAnime";
+import { SearchAnime } from "pages";
 
 function App() {
   return (

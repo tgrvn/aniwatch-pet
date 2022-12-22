@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import ActiveFilters from "../../components/activeFilters/ActiveFilters";
-import PreviewSection from "../../components/previewSection/PreviewSection";
-import SearchPanel from "../../components/searchPanel/SearchPanel";
+import { SecondaryFilters, PreviewSection, SearchPanel } from "components";
 
 export default function SearchAnime() {
   const [filters, setFilters] = useState({
@@ -22,7 +20,7 @@ export default function SearchAnime() {
     <div>
       <SearchPanel filters={filters} setFilters={setFilters} />
 
-      {isSearching && <ActiveFilters />}
+      {isSearching && <SecondaryFilters />}
 
       {!isSearching && <PreviewSection />}
     </div>

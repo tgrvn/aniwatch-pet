@@ -1,6 +1,6 @@
 const { useMemo } = require("react");
 
-export function useSearch(data, querry) {
+export default function useSearch(data, querry) {
   const filteredData = useMemo(() => {
     if (!querry) return data;
 
