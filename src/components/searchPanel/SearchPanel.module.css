@@ -18,8 +18,8 @@
 .switcher {
   display: none;
   align-self: flex-end;
-  min-width: 37px;
-  height: 37px;
+  min-width: 38px;
+  height: 38px;
   border-radius: 6px;
   box-shadow: var(--input-box-s);
   background-color: var(--input-bc);
@@ -65,7 +65,7 @@
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .panel {
     flex-wrap: wrap;
   }

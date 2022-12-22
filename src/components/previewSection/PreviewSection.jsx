@@ -1,9 +1,9 @@
 import React from "react";
+import { AnimeCard } from "components";
 import styles from "./PreviewSection.module.css";
-import AnimeCard from "../animeCard/AnimeCard";
 
 export default function PreviewSection() {
-  const cards = [1, 2, 3, 4, 5];
+  const cards = [1, 2, 3, 4, 5, 6];
 
   return (
     <section className={styles.section}>
@@ -13,7 +13,8 @@ export default function PreviewSection() {
       </div>
 
       <div className={styles.cards}>
-        {cards && cards.map((c) => <AnimeCard key={c} />)}
+        {cards &&
+          cards.map((c) => <AnimeCard className={styles.card} key={c} />)}
       </div>
     </section>
   );

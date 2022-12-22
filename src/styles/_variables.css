@@ -16,4 +16,13 @@
   --option-hover-text: #43b6f2;
   --counter-bc: #e3eaf0;
   --counter-text: #647380;
+
+  --loader-bc: #dde6ee;
+  --loader-gradient: linear-gradient(
+    90deg,
+    rgba(221, 230, 238, 0) 0,
+    rgba(8, 143, 214, 0.06) 40%,
+    rgba(8, 143, 214, 0.06) 60%,
+    rgba(221, 230, 238, 0)
+  );
 }
