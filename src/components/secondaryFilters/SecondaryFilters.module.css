@@ -1,0 +1,127 @@
+.secondary {
+  display: flex;
+  justify-content: space-between;
+  gap: 0 20px;
+  align-items: center;
+  margin-top: 24px;
+  height: max-content;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.active {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.active:hover .clearAll {
+  display: block;
+}
+
+.button {
+  display: flex;
+  gap: 0 4px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  background-color: var(--picton-blue);
+  font-size: 12px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.button:hover .buttonClear {
+  display: block;
+}
+
+.buttonClear::before {
+  content: "\f00d";
+}
+
+.buttonClear::before,
+.clearIcon::before {
+  font-family: "icomoon";
+  font-weight: 100;
+  font-size: 11px;
+}
+
+.clearAll {
+  display: none;
+  border-radius: 6px;
+  padding: 5px 8px;
+  background-color: var(--casper);
+  font-size: 12px;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.clearIcon {
+  margin-left: 4px;
+}
+
+.clearIcon::before {
+  content: "\f00d";
+}
+
+.buttonClear {
+  display: none;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 100%;
+}
+
+.icon::before {
+  content: "\e936";
+  font-family: "icomoon";
+  color: var(--casper);
+  transform: scale(-1, 1);
+}
+
+.setings {
+  display: flex;
+  align-items: center;
+  justify-self: flex-end;
+  gap: 0 6px;
+}
+
+.icons:hover::before,
+.chart:hover:before,
+.table:hover::before {
+  color: var(--slate-gray);
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.icons::before,
+.chart::before,
+.table::before {
+  display: flex;
+  align-items: center;
+  font-family: "icomoon";
+  font-weight: 100;
+  color: var(--casper);
+}
+
+.icons::before {
+  content: "\f00a";
+}
+
+.chart::before {
+  content: "\f009";
+}
+
+.table::before {
+  content: "\f00b";
+}

@@ -9,7 +9,7 @@
   height: 16px;
   font-family: "icomoon";
   font-size: 16px;
-  color: var(--input-icon);
+  color: var(--botticelli);
 }
 
 .search__wrap::before {

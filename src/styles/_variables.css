@@ -1,28 +1,28 @@
 :root {
-  --app-bc: #edf1f5;
+  --white: #fff;
+  --athens-gray: #f2f5f7;
+  --aqua-haze: #edf1f5;
+  --alabaster: #fbfbfb;
+  --mystic: #e3eaf0;
+  --botticelli: #c9d7e3;
+  --moby-dick: #dde6ee;
+  --casper: #adc0d2;
+  --bali-hai: #8ba0b2;
+  --slate-gray: #748899;
+  --pale-sky: #647380;
+  --blue-bayoux: #506070;
+  --shuttle-gray: #516170;
+  --malibu: #6fc8ff;
+  --picton-blue: #43b6f2;
 
-  --text-primary: #647380;
-  --heading-primary: #516170;
-
-  --input-box-s: 0px 14px 30px rgba(103, 132, 187, 0.1),
-    0px 4px 4px rgba(103, 132, 187, 0.04);
-  --input-bc: #fbfbfb;
-  --input-txt: #748899;
-  --input-placeholder: #adc0d2;
-  --input-icon: #c9d7e3;
-  --input-icon-hover: #adc0d2;
-  --input-icon-active: #6fc8ff;
-  --option-hover-bc: #f2f5f7;
-  --option-hover-text: #43b6f2;
-  --counter-bc: #e3eaf0;
-  --counter-text: #647380;
-
-  --loader-bc: #dde6ee;
-  --loader-gradient: linear-gradient(
+  --botticelli-gradient: linear-gradient(
     90deg,
     rgba(221, 230, 238, 0) 0,
     rgba(8, 143, 214, 0.06) 40%,
     rgba(8, 143, 214, 0.06) 60%,
     rgba(221, 230, 238, 0)
   );
+
+  --input-box-s: 0px 14px 30px rgba(103, 132, 187, 0.1),
+    0px 4px 4px rgba(103, 132, 187, 0.04);
 }

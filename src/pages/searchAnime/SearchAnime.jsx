@@ -20,7 +20,9 @@ export default function SearchAnime() {
     <div>
       <SearchPanel filters={filters} setFilters={setFilters} />
 
-      {isSearching && <SecondaryFilters />}
+      {isSearching && (
+        <SecondaryFilters filters={filters} setFilters={setFilters} />
+      )}
 
       {!isSearching && <PreviewSection />}
     </div>
