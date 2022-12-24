@@ -7,7 +7,7 @@
 
 .coverLoading {
   height: 88%;
-  background-color: var(--loader-bc);
+  background-color: var(--moby-dick);
   overflow: hidden;
   border-radius: 4px;
 }
@@ -15,7 +15,7 @@
 .titleLoading {
   height: 6%;
   width: 80%;
-  background-color: var(--loader-bc);
+  background-color: var(--moby-dick);
   overflow: hidden;
   border-radius: 4px;
 }
@@ -24,7 +24,7 @@
   content: "";
   display: block;
   width: 200%;
-  background: var(--loader-gradient);
+  background: var(--botticelli-gradient);
   height: 100%;
   transform: translateX(0);
   animation: loading 2s linear infinite;

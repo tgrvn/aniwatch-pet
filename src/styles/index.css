@@ -4,17 +4,16 @@
 }
 
 body {
-  background-color: var(--app-bc);
+  background-color: var(--aqua-haze);
 }
 
 .App {
-  background-color: var(--app-bc);
-  color: var(--text-primary);
+  background-color: var(--aqua-haze);
+  color: var(--pale-sky);
   font-family: "Overpass", sans-serif;
   font-weight: 600;
   min-height: 100vh;
   width: 100%;
-  min-width: 160px;
   padding-top: 60px;
   min-width: 220px;
 }

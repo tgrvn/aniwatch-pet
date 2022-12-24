@@ -13,7 +13,7 @@
   border-radius: 6px;
   width: 100%;
   box-shadow: var(--input-box-s);
-  background-color: var(--input-bc);
+  background-color: var(--alabaster);
 }
 
 .option {
@@ -24,14 +24,14 @@
   border-radius: 6px;
   font-size: 14px;
   line-height: 16px;
-  color: var(--input-txt);
+  color: var(--bali-hai);
   cursor: pointer;
   transition: all 0.2s linear;
 }
 
 .option:hover {
-  background-color: var(--option-hover-bc);
-  color: var(--option-hover-text);
+  background-color: var(--athens-gray);
+  color: var(--picton-blue);
 }
 
 .selected::after {
@@ -42,7 +42,7 @@
   width: 16px;
   height: 16px;
   font-family: "icomoon";
-  color: var(--input-icon-active);
+  color: var(--malibu);
 }
 
 .multiply {
@@ -62,8 +62,8 @@
 .multiplyCount {
   padding: 4px 6px;
   border-radius: 4px;
-  background-color: var(--counter-bc);
-  color: var(--counter-text);
+  background-color: var(--mystic);
+  color: var(--pale-sky);
 }
 
 .pointer {

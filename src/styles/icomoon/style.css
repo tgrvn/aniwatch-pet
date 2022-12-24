@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?27eoj0');
-  src:  url('fonts/icomoon.eot?27eoj0#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?27eoj0') format('truetype'),
-    url('fonts/icomoon.woff?27eoj0') format('woff'),
-    url('fonts/icomoon.svg?27eoj0#icomoon') format('svg');
+  src:  url('./fonts/icomoon.eot?t44svy');
+  src:  url('./fonts/icomoon.eot?t44svy#iefix') format('embedded-opentype'),
+    url('./fonts/icomoon.ttf?t44svy') format('truetype'),
+    url('./fonts/icomoon.woff?t44svy') format('woff'),
+    url('./fonts/icomoon.svg?t44svy#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -28,6 +28,15 @@
 .icon-search:before {
   content: "\f002";
 }
+.icon-th-large:before {
+  content: "\f009";
+}
+.icon-th:before {
+  content: "\f00a";
+}
+.icon-th-list:before {
+  content: "\f00b";
+}
 .icon-close:before {
   content: "\f00d";
 }
@@ -42,6 +51,12 @@
 }
 .icon-chevron-down:before {
   content: "\f078";
+}
+.icon-sort:before {
+  content: "\f0dc";
+}
+.icon-unsorted:before {
+  content: "\f0dc";
 }
 .icon-price-tags:before {
   content: "\e936";
